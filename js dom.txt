@@ -1,0 +1,61 @@
+jumlahBarang.forEach((input) => {
+  input.addEventListener("input", () => {
+    // totalHargaBarang = hargaBarang.value * input.value;
+    let valueHargaBarang = document.createElement("p");
+    valueHargaBarang.value = hargaBarang.value * input.value;
+    console.log("jumlah barang " + input.value);
+  });
+});
+
+
+const hargaBarang = document.querySelectorAll(".harga-barang");
+const jumlahBarang = document.querySelectorAll(".jumlah-barang");
+const totalHargaBarang = document.querySelectorAll(".total-harga-barang");
+const sectionBarang = document.querySelectorAll(".section-barang");
+
+jumlahBarang.forEach((input, index) => {
+  input.addEventListener("input", () => {
+    let harga = parseFloat(
+      hargaBarang[index].innerText.replace("Rp ", "").replace(",", "")
+    );
+
+    let total = harga * input.value;
+
+    let valueHargaBarang = document.createElement("p");
+
+    valueHargaBarang.innerHTML = "Rp " + total.toLocaleString() + ".000";
+
+    totalHargaBarang[index].innerHTML = "";
+
+    totalHargaBarang[index].appendChild(valueHargaBarang);
+  });
+});
+
+sectionBarang.forEach((section) => {
+  const tambahkanKeranjang = document.createElement("button");
+  tambahkanKeranjang.className = "tambah-keranjang";
+  tambahkanKeranjang.innerHTML = "keranjang";
+
+  tambahkanKeranjang.addEventListener("click", () => {
+   
+  });
+
+  section.appendChild(tambahkanKeranjang);
+});
+
+
+// totalBelanja.addEventListener("click", () => {
+//   let totalBelanjaan = 0;
+//   liHargaBarangList = hargaBelanjaan.querySelectorAll(".liHargaBarang");
+//   liHargaBarangList.forEach((li) => {
+//     let angkaHarga = li.innerText.match(/\d+/);
+//     if (angkaHarga && angkaHarga.length > 0) {
+//       totalBelanjaan += parseInt(angkaHarga[0]);
+//     }
+//   });
+//   let totalBelanjaElement = document.createElement("p");
+//   totalBelanjaElement.innerText =
+//     "Total Belanja: Rp " + totalBelanjaan.toLocaleString() + ".000";
+//   const totalSummary = document.querySelector(".total-summary");
+//   totalSummary.appendChild(totalBelanjaElement);
+// });

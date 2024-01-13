@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+
+    <!-- my font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akshar&family=Amatic+SC:wght@700&family=Montserrat:wght@300;400;600&family=Pacifico&family=Poppins:wght@200;400;500;600&family=Sora:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- my font -->
+
+    <!-- my icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- my icon -->
+
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- my style -->
+  </head>
+  <body>
+    <main>
+      <!-- navbar -->
+      <nav class="navbar">
+        <ul class="nav-bar">
+          <li class="nav-link">Home</li>
+          <li class="nav-link">Sevice</li>
+          <li class="nav-link">Blog</li>
+        </ul>
+
+        <div class="logo"><h1 id="title">New Shopping</h1></div>
+
+        <div class="setting">
+          <i data-feather="settings" class="set"></i>
+        </div>
+      </nav>
+      <!-- navbar -->
+
+      <!-- cart menu -->
+      <div class="container">
+        <div class="title-cart">
+          <h3 class="user-cart">Keranjang Anda</h3>
+        </div>
+        <div class="main-cart-service">
+          <div class="product-section">
+            <section class="section-barang">
+              <img src="img/icon.jpg" alt="" />
+              <p class="harga-barang">Rp 198.000</p>
+              <input type="number" class="jumlah-barang" />
+              <p class="total-harga-barang">Rp 0</p>
+            </section>
+            <section class="section-barang">
+              <img src="img/bts 70.jpg" alt="" />
+              <p class="harga-barang">Rp 228.000</p>
+              <input type="number" class="jumlah-barang" />
+              <p class="total-harga-barang">Rp 0</p>
+            </section>
+            <section class="section-barang">
+              <img src="img/exc-01.webp" alt="" />
+              <p class="harga-barang">Rp 378.000</p>
+              <input type="number" class="jumlah-barang" />
+              <p class="total-harga-barang">Rp 0</p>
+            </section>
+          </div>
+          <div class="cashier">
+            <div class="total-header">
+              <h2 class="user-cashier">Kasir</h2>
+            </div>
+            <div class="total-summary">
+              <ul class="harga-belanjaan">
+                Barang belanja:
+              </ul>
+              <p>Diskon :</p>
+              <p id="p-total-belanja">Total Belanja :</p>
+              <button type="submit" id="total-belanja">Bayar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cart menu -->
+    </main>
+    <!-- script js -->
+    <script src="js/script.js"></script>
+    <!-- script js -->
+    <!-- feather icon -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- feather icon -->
+  </body>
+</html>

@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+nav.navbar {
+  width: 80vw;
+  height: 40px;
+  display: flex;
+  gap: 8.5rem;
+  justify-content: center;
+  text-align: center;
+  background-color: #0e0e0e;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border: 1px solid;
+}
+
+nav.navbar ul.nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  gap: 1.2rem;
+  border: 1px solid;
+}
+
+nav.navbar ul.nav-bar li.nav-link {
+  font-size: 13px;
+  cursor: pointer;
+  color: #969292;
+  width: 50px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  transition: all ease-in-out 0.3s;
+}
+
+nav.navbar ul.nav-bar li.nav-link:hover {
+  border-bottom: 1px solid #f5f5f5;
+  color: #fff;
+}
+
+.logo h1 {
+  color: #fff;
+  text-shadow: 2px 2px #989898, 4px 4px #6c6666;
+  z-index: 100;
+  position: relative;
+  right: 80px;
+}
+
+.setting {
+  width: 30px;
+  text-align: center;
+  transform: translateY(20%);
+  color: #fff;
+}
+
+.setting :hover {
+  color: #c0c9cc;
+}
+
+.container {
+  width: 100%;
+  border: 1px solid;
+  padding: 20px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.title-cart {
+  text-align: center;
+}
+
+.main-cart-service {
+  display: flex;
+  padding: 20px;
+  border: 1px solid;
+}
+
+.product-section {
+  width: 70%;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 1rem;
+}
+
+section {
+  width: 95%;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+p {
+  font-size: 10px;
+}
+
+input {
+  width: 30px;
+  font-size: 10px;
+}
+
+.cashier {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid;
+}
+
+h2.user-cashier {
+  text-align: center;
+}
+
+.total-summary {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.total-summary p {
+  text-align: left;
+}
+
+.tambah-keranjang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #333333;
+  font-size: 10px;
+  width: 80px;
+  height: 20px;
+  font-weight: bold;
+  border: 2px solid #333333;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+  background-color: #ffffff;
+}
+
+.tambah-keranjang:hover {
+  box-shadow: 0 0 #333;
+  color: #fff;
+  background-color: #333;
+}
+
+.harga-belanjaan {
+  font-size: 14px;
+}
+
+.liHargaBarang {
+  font-size: 12px;
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.total-summary p {
+  font-size: 14px;
+}
+
+#total-belanja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #333333;
+  font-size: 10px;
+  width: 80px;
+  height: 20px;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+  left: 60px;
+  border: 2px solid #333333;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+  background-color: #ffffff;
+}
+
+#total-belanja:hover {
+  box-shadow: 0 0 #333;
+  color: #fff;
+  background-color: #333;
+}
